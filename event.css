@@ -382,8 +382,9 @@ justify-content: center;
 .btn{
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #f73c3c;
+  background-color: #ffb7b7;
   font-family: 'poppins', sans-serif;
+  color: black;
   border: none;
   cursor: pointer;
   border-radius: 8px;
@@ -437,22 +438,26 @@ footer p {
     -webkit-background-clip: text;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-.cta-button {
-    display: inline-block;
-    background: #c93939;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-}
-.cta-button i {
-    margin-right: 5px;
-}
-.cta-button:hover {
-    background: #a62828;
-}
+.btnn{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f3aeae;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;;
+  }
+  
+  .btnn:hover{
+      background-color: #f58888;
+      transform: scale(1.05);
+  }
+  
+  .btnn:active{
+      transform: scale(0.95);
+      background-color: #a62828;
+  }
 
 /* Brand Sponsors */
 .brand-sponsors {
@@ -516,4 +521,94 @@ input {
     .testimonial-card {
         width: 90%;
     }
+}
+
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text Responsiveness */
+h1, h2, h3, h4, h5, p {
+    font-size: calc(16px + 1vw); /* Adjust font size based on viewport width */
+    line-height: 1.5; /* Consistent readability */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller headings for mobile */
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Flexbox Adjustment for Small Screens */
+
+/* Hero Section Responsiveness */
+.hero-section {
+    padding: 10% 5%;
+}
+.hero-section h1 {
+    font-size: 5vw; /* Scales based on viewport width */
+    margin-top: 10%;
+}
+.hero-section p {
+    font-size: 2.5vw;
+}
+
+/* Category Card Responsiveness */
+.category-card img {
+    max-width: 80%;
+    height: auto;
+}
+.category-card h5 {
+    font-size: 1.2em; /* Maintain scalability */
+}
+
+/* Feature and Event Cards */
+.feature-card img,
+.event-card img {
+    width: 100%; /* Scale images to container width */
+    height: auto;
+}
+.feature-card, .event-card {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 10px auto; /* Add spacing between cards */
+}
+
+/* Testimonials Responsiveness */
+.testimonial-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer Responsiveness */
+footer {
+    padding: 20px 10px;
+}
+footer h2 {
+    font-size: 1.5rem;
+}
+footer p {
+    font-size: 1rem;
+}
+
+/* Brand Sponsors Responsiveness */
+.col-5 img {
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+/* Form Input Fields */
+input {
+    width: calc(50% + 10vw); /* Adjust width based on screen size */
 }
