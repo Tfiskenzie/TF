@@ -610,5 +610,6 @@ footer p {
 
 /* Form Input Fields */
 input {
-    width: calc(50% + 10vw); /* Adjust width based on screen size */
+    width: calc(20% + 10vw); /* Adjust width based on screen size */
+    color: white;
 }
